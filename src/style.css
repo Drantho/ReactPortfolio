@@ -281,3 +281,98 @@ animation-name: example;
         opacity:0;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html, body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .root{
+        width: 100%;
+        margin: 0;
+    }
+    .app{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    ul{
+        margin: 10px 25px;
+    }
+
+   
+    nav>ul{
+        left: 15px;
+        margin: 5px 0;
+        padding: 10px 5px;
+    }
+    nav>ul>li{
+        margin: 8px;
+    }
+    nav>ul>li>a{
+        font-size: 8pt;
+    }
+
+    .portrait{
+        width: 200px;
+        height: 200px;
+        margin: 50px 50px 50px 50px;
+    }
+
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-text>p{
+        font-size: 1rem;
+    }
+
+    .verb{
+        top: 10px;
+        left: -200px;
+        font-size: 3rem;
+    }
+
+    h2, h3{
+        margin: 10px 25px;
+    }
+
+    .portfolio-item{
+        width: 80%;
+        margin: 25px auto;
+    }
+
+    .about-wrapper{
+        flex-direction: column;
+    }
+
+    .about-wrapper p{
+        width: 85%;
+        padding: 25px;
+    }
+
+    .panel{
+        height: unset;
+    }
+
+    .spacer{
+        height: 100px;
+    }
+
+    #contact-ul{
+        margin: 75px auto;
+    }
+
+    span>p{
+        margin: 25px;
+    }
+}
