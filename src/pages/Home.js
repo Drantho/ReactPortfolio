@@ -4,11 +4,28 @@ import ProjectThumb from '../components/ProjectThumb';
 import Spacer from '../components/Spacer'
 import data from "../data";
 import Navbar from "../components/Navbar"
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 export default function Home() {
+
+    const handleDragStart = (e) => e.preventDefault();
+
+    const items = data.map(element => <img key={element.name} 
+        src={element.largeImage} 
+        onDragStart={handleDragStart} 
+        // style={{width: "100%"}}
+        />)
+    
+    // [
+    //     <img src="path-to-img" onDragStart={handleDragStart} />,
+    //     <img src="path-to-img" onDragStart={handleDragStart} />,
+    //     <img src="path-to-img" onDragStart={handleDragStart} />,
+    // ];
+
     return (
         <div>
-            <Navbar/>
+            <Navbar />
             <Spacer id="intro" />
             <Panel name="intro" classNames={["intro"]}>
                 <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_300/v1614077809/me_fvjfec.jpg" className="portrait" />
@@ -27,14 +44,17 @@ export default function Home() {
                 </div>
 
             </Panel>
+
+            <AliceCarousel mouseTracking items={items} />
+
             <Spacer id="portfolio" />
             <Panel classNames={["portfolio"]}>
 
                 <h2>Portfolio</h2>
 
                 <div className="portfolio-wrapper">
-                    
-                    {data.map(item => <ProjectThumb key={item.name} name={item.name} displayName={item.displayName} image={item.image}/>)}
+
+                    {data.map(item => <ProjectThumb key={item.name} name={item.name} displayName={item.displayName} image={item.image} />)}
 
                 </div>
             </Panel>
@@ -75,17 +95,17 @@ export default function Home() {
                 <ul id="contact-ul">
                     <li>
                         <a href="mailto:mitchellanthonyd@gmail.com">
-                        <i className="fas fa-envelope-square fa-8x"></i>
+                            <i className="fas fa-envelope-square fa-8x"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Drantho">
-                        <i className="fab fa-github-square fa-8x"></i>
+                            <i className="fab fa-github-square fa-8x"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/drantho">
-                        <i className="fab fa-linkedin fa-8x"></i>
+                            <i className="fab fa-linkedin fa-8x"></i>
                         </a>
                     </li>
                 </ul>
