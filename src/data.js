@@ -89,7 +89,7 @@ const data = [
         displayName: "Monthly Land Surface Temperature Graph",
         name: "MonthlyLandSurfaceTempGraph",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075795/tempgraph_ckuoar.png",
-        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075795/tempgraph_ckuoar.png",
+        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075795/tempgraph_ckuoar.png",
         technologies: [
             "HTML",
             "CSS",
@@ -175,7 +175,7 @@ const data = [
         displayName: "Weather App",
         name: "WeatherApp",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075793/weather_p67baq.png",
-        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075793/weather_p67baq.png",
+        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075793/weather_p67baq.png",
         technologies: [
             "HTML",
             "CSS",
@@ -200,7 +200,7 @@ const data = [
         displayName: "Game of Life",
         name: "GameOfLife",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075786/gameoflife_eaarj6.png",
-        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075786/gameoflife_eaarj6.png",
+        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075786/gameoflife_eaarj6.png",
         technologies: [
             "HTML",
             "CSS",
@@ -259,7 +259,7 @@ const data = [
         displayName: "Machine Maintenance",
         name: "Maintenance",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075786/maintenance_p6abtp.png",
-        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075786/maintenance_p6abtp.png",
+        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075786/maintenance_p6abtp.png",
         technologies: [
             "HTML",
             "CSS",

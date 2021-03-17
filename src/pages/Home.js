@@ -11,7 +11,8 @@ export default function Home() {
 
     const handleDragStart = (e) => e.preventDefault();
 
-    const items = data.map(element => <img key={element.name} 
+    const items = data.map(element => <img 
+        key={element.name} 
         src={element.largeImage} 
         onDragStart={handleDragStart} 
         // style={{width: "100%"}}
